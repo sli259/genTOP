@@ -10,6 +10,7 @@
 #SBATCH --mem=10GB                  #Request Memory in MB per node
 #SBATCH --output=job.%j      #Send stdout/err 
 
+#module load Anaconda3/2021.05
 export PATH=/sw/group/lms/sw/schrodinger/2020-1/utilities/:$PATH
 
 MOL_GEOM=YOUR_FILE_NAME
