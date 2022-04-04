@@ -235,7 +235,7 @@ def printITP():
 
 if __name__ == '__main__':
     # Parse Command-line Input
-    parser = argparse.ArgumentParser(description='Generate random crystals from input(.log, .gjf or .xyz) file')
+    parser = argparse.ArgumentParser(description='Convert Schrodinger output to GROMACS topology and force field files')
     parser.add_argument('-f', nargs=1, help='Input geometry file (xyz, gro)', required=True)
     parser.add_argument('-l', nargs=1, help='Input log file', required=True)
     parser.add_argument('-o', nargs=1, help='Output gromacs gro file', required=True)
